@@ -30,7 +30,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/vchaindz/go-virustotal"
+	"github.com/dutchcoders/go-virustotal"
 )
 
 func (s *Server) virusTotalHandler(w http.ResponseWriter, r *http.Request) {

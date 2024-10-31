@@ -34,8 +34,8 @@ import (
 	"os"
 	"time"
 
+	"github.com/dutchcoders/go-clamd"
 	"github.com/gorilla/mux"
-	"github.com/vchaindz/go-clamd"
 )
 
 const clamavScanStatusOK = "OK"
