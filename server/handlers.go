@@ -1,7 +1,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2014-2017 DutchCoders [https://github.com/dutchcoders/]
+Copyright (c) 2014-2017 DutchCoders [https://github.com/vchaindz/]
 Copyright (c) 2018-2020 Andrea Spacca.
 Copyright (c) 2020- Andrea Spacca and Stefan Benten.
 
@@ -57,9 +57,9 @@ import (
 	"github.com/ProtonMail/go-crypto/openpgp/armor"
 	"github.com/ProtonMail/go-crypto/openpgp/packet"
 	"github.com/ProtonMail/gopenpgp/v2/constants"
-	"github.com/dutchcoders/transfer.sh/server/storage"
 	"github.com/tg123/go-htpasswd"
 	"github.com/tomasen/realip"
+	"github.com/vchaindz/transfer.sh/server/storage"
 
 	"github.com/gorilla/mux"
 	"github.com/microcosm-cc/bluemonday"

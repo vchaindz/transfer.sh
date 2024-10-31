@@ -1,7 +1,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2014-2017 DutchCoders [https://github.com/dutchcoders/]
+Copyright (c) 2014-2017 DutchCoders [https://github.com/vchaindz/]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -52,9 +52,9 @@ import (
 	"github.com/tg123/go-htpasswd"
 	"golang.org/x/crypto/acme/autocert"
 
-	web "github.com/dutchcoders/transfer.sh-web"
-	"github.com/dutchcoders/transfer.sh/server/storage"
 	assetfs "github.com/elazarl/go-bindata-assetfs"
+	web "github.com/vchaindz/transfer.sh-web"
+	"github.com/vchaindz/transfer.sh/server/storage"
 )
 
 // parse request with maximum memory of _24Kilobits

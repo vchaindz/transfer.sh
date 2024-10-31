@@ -115,12 +115,12 @@ jobs:
       - name: Build Transfersh
         run: |
           mkdir -p build_assets
-          go build -tags netgo -ldflags "-X github.com/dutchcoders/transfer.sh/cmd.Version=${GITHUB_REF##*/} -a -s -w -extldflags '-static'" -o build_assets/transfersh-${GITHUB_REF##*/}-${ASSET_NAME}
+          go build -tags netgo -ldflags "-X github.com/vchaindz/transfer.sh/cmd.Version=${GITHUB_REF##*/} -a -s -w -extldflags '-static'" -o build_assets/transfersh-${GITHUB_REF##*/}-${ASSET_NAME}
     
       - name: Build Mips softfloat Transfersh
         if: matrix.goarch == 'mips' || matrix.goarch == 'mipsle'
         run: |
-          GOMIPS=softfloat go build -tags netgo -ldflags "-X github.com/dutchcoders/transfer.sh/cmd.Version=${GITHUB_REF##*/} -a -s -w -extldflags '-static'" -o build_assets/transfersh-softfloat-${GITHUB_REF##*/}-${ASSET_NAME}
+          GOMIPS=softfloat go build -tags netgo -ldflags "-X github.com/vchaindz/transfer.sh/cmd.Version=${GITHUB_REF##*/} -a -s -w -extldflags '-static'" -o build_assets/transfersh-softfloat-${GITHUB_REF##*/}-${ASSET_NAME}
 
       - name: Rename Windows Transfersh
         if: matrix.goos == 'windows'

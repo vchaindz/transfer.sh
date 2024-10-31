@@ -1,7 +1,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2014-2017 DutchCoders [https://github.com/dutchcoders/]
+Copyright (c) 2014-2017 DutchCoders [https://github.com/vchaindz/]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,7 +30,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/dutchcoders/go-virustotal"
+	"github.com/vchaindz/go-virustotal"
 )
 
 func (s *Server) virusTotalHandler(w http.ResponseWriter, r *http.Request) {

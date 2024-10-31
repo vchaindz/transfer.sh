@@ -1,7 +1,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2014-2017 DutchCoders [https://github.com/dutchcoders/]
+Copyright (c) 2014-2017 DutchCoders [https://github.com/vchaindz/]
 Copyright (c) 2018-2020 Andrea Spacca.
 Copyright (c) 2020- Andrea Spacca and Stefan Benten.
 
@@ -34,8 +34,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/dutchcoders/go-clamd"
 	"github.com/gorilla/mux"
+	"github.com/vchaindz/go-clamd"
 )
 
 const clamavScanStatusOK = "OK"
