@@ -1,11 +1,11 @@
 # Default to Go 1.20
 ARG GO_VERSION=1.20
-FROM golang:${GO_VERSION}-alpine as build
+FROM golang:${GO_VERSION}-alpine AS build
 
 # Necessary to run 'go get' and to compile the linked binary
 RUN apk add git musl-dev mailcap
 
-WORKDIR /go/src/github.com/dutchcoders/transfer.sh
+WORKDIR /go/src/github.com/vchaindz/transfer.sh
 
 COPY go.mod go.sum ./
 
@@ -14,7 +14,7 @@ RUN go mod download
 COPY . .
 
 # build & install server
-RUN CGO_ENABLED=0 go build -tags netgo -ldflags "-X github.com/dutchcoders/transfer.sh/cmd.Version=$(git describe --tags) -a -s -w -extldflags '-static'" -o /go/bin/transfersh
+RUN CGO_ENABLED=0 go build -tags netgo -ldflags "-X github.com/vchaindz/transfer.sh/cmd.Version=$(git describe --tags) -a -s -w -extldflags '-static'" -o /go/bin/transfersh
 
 ARG PUID=5000 \
     PGID=5000 \
@@ -28,7 +28,7 @@ RUN mkdir -p /tmp/useradd /tmp/empty && \
     echo "${RUNAS}:!::" >> /tmp/useradd/groupshadow; else touch /tmp/useradd/unused; fi
 
 FROM scratch AS final
-LABEL maintainer="Andrea Spacca <andrea.spacca@gmail.com>"
+LABEL maintainer="Dennis Zimmer <dzimmer@vchain.us>"
 ARG RUNAS
 
 COPY --from=build /etc/mime.types /etc/mime.types

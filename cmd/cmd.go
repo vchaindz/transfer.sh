@@ -16,7 +16,7 @@ import (
 )
 
 // Version is inject at build time
-var Version = "0.0.0"
+var Version = "1.0.0"
 var helpTemplate = `NAME:
 {{.Name}} - {{.Usage}}
 

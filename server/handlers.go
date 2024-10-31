@@ -61,11 +61,11 @@ import (
 	"github.com/tg123/go-htpasswd"
 	"github.com/tomasen/realip"
 
-	web "github.com/dutchcoders/transfer.sh-web"
 	"github.com/gorilla/mux"
 	"github.com/microcosm-cc/bluemonday"
 	blackfriday "github.com/russross/blackfriday/v2"
 	qrcode "github.com/skip2/go-qrcode"
+	web "github.com/vchaindz/transfer.sh-web"
 	"golang.org/x/net/idna"
 	"golang.org/x/text/runes"
 	"golang.org/x/text/transform"
@@ -1329,7 +1329,7 @@ func (s *Server) RedirectHandler(h http.Handler) http.HandlerFunc {
 func LoveHandler(h http.Handler) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("x-made-with", "<3 by DutchCoders")
-		w.Header().Set("x-served-by", "Proudly served by DutchCoders")
+		w.Header().Set("x-served-by", "Proudly served by DZ")
 		w.Header().Set("server", "Transfer.sh HTTP Server")
 		h.ServeHTTP(w, r)
 	}
