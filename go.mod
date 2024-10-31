@@ -25,7 +25,7 @@ require (
 	github.com/tg123/go-htpasswd v1.2.1
 	github.com/tomasen/realip v0.0.0-20180522021738-f0c99a92ddce
 	github.com/urfave/cli/v2 v2.25.3
-	github.com/vchaindz/transfer.sh-web v0.0.0-20241031115006-c3b80cf02777
+	github.com/vchaindz/transfer.sh-web v1.0.2
 	golang.org/x/crypto v0.21.0
 	golang.org/x/net v0.23.0
 	golang.org/x/oauth2 v0.7.0
