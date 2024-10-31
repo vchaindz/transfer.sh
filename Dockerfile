@@ -10,7 +10,6 @@ WORKDIR /go/src/github.com/vchaindz/transfer.sh
 COPY go.mod go.sum ./
 
 RUN go mod download
-RUN go get github.com/vchaindz/transfer.sh-web
 
 COPY . .
 
