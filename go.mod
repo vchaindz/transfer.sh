@@ -14,7 +14,6 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.33.1
 	github.com/dutchcoders/go-clamd v0.0.0-20170520113014-b970184f4d9e
 	github.com/dutchcoders/go-virustotal v0.0.0-20140923143438-24cc8e6fa329
-	github.com/vchaindz/transfer.sh-web v0.0.0-20241031115006-c3b80cf02777
 	github.com/elazarl/go-bindata-assetfs v1.0.1
 	github.com/fatih/color v1.14.1
 	github.com/golang/gddo v0.0.0-20210115222349-20d68f94ee1f
@@ -26,6 +25,7 @@ require (
 	github.com/tg123/go-htpasswd v1.2.1
 	github.com/tomasen/realip v0.0.0-20180522021738-f0c99a92ddce
 	github.com/urfave/cli/v2 v2.25.3
+	github.com/vchaindz/transfer.sh-web v0.0.0-20241031115006-c3b80cf02777
 	golang.org/x/crypto v0.21.0
 	golang.org/x/net v0.23.0
 	golang.org/x/oauth2 v0.7.0
